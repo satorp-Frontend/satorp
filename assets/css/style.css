@@ -1,0 +1,24 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.top-gradient {
+    background: linear-gradient(to right, #b5ce00, #00b495, #00b6d4);
+}
+
+.rounded-corner {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.container-x {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .container-x {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
