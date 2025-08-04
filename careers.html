@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Satorp | Careers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <!-- Tailwind + your config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-white">
+
+  <!-- Top Bar -->
+  <div
+    class="w-full top-gradient text-white text-xs sm:text-sm flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 container-x py-3">
+    <div class="flex flex-row flex-wrap gap-2 items-center justify-center md:justify-start">
+      <span class="font-medium">العربية</span>
+      <span class="hidden sm:inline-block">|</span>
+      <span class="font-medium">English</span>
+    </div>
+    <div class="flex flex-row flex-wrap gap-2 items-center justify-center md:justify-end text-[11px] sm:text-sm">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+      </svg>
+      <span>Search</span>
+      <span class="hidden sm:inline-block">|</span>
+      <span class="text-center md:text-left">Constantly push the boundaries of what's possible</span>
+    </div>
+  </div>
+
+  <!-- HERO (full-bleed) -->
+  <section class="relative">
+    <div class="relative left-1/2 -translate-x-1/2 w-screen">
+      <img src="assets/images/careers-hero.jpg" onerror="this.src='assets/images/7.png'" alt="Careers hero"
+        class="block w-full h-[520px] sm:h-[620px] md:h-[720px] object-cover" />
+      <div class="absolute inset-0 bg-black/35"></div>
+
+      <!-- Header -->
+      <header class="absolute top-0 left-0 right-0 z-20">
+        <div class="container-x py-4 flex items-center justify-between">
+          <nav class="hidden lg:flex gap-6 text-white font-semibold text-sm xl:text-base">
+            <a href="index.html" class="hover:text-satorpGreen">HOME</a>
+            <a href="about.html" class="hover:text-satorpGreen">ABOUT</a>
+            <a href="business.html" class="hover:text-satorpGreen">WHAT WE DO</a>
+            <a href="sustainability.html" class="hover:text-satorpGreen">SUSTAINABILITY</a>
+            <a href="careers.html" class="text-satorpGreen">CAREERS</a>
+            <a href="media.html" class="hover:text-satorpGreen">MEDIA CENTER</a>
+            <a href="contact.html" class="hover:text-satorpGreen">CONTACT</a>
+          </nav>
+          <button id="menuBtn" class="lg:hidden text-white focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <img src="assets/images/logo.png" alt="Logo" class="w-[140px] sm:w-[170px] h-[111px]" />
+        </div>
+      </header>
+      <!-- Mobile Sidebar (same as index) -->
+      <div id="mobileSidebar" class="fixed top-0 right-0 w-64 h-full bg-[#1f2960] text-white
+       transform translate-x-full transition-transform duration-300
+       z-50 shadow-lg flex flex-col p-6 space-y-4 lg:hidden">
+        <button id="closeMenu" class="self-end text-white mb-6" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Your links -->
+        <a href="index.html" class="hover:text-satorpGreen">HOME</a>
+        <a href="about.html" class="hover:text-satorpGreen">ABOUT</a>
+        <a href="business.html" class="hover:text-satorpGreen">WHAT WE DO</a>
+        <a href="sustainability.html" class="hover:text-satorpGreen">SUSTAINABILITY</a>
+        <a href="careers.html" class="hover:text-satorpGreen">CAREERS</a>
+        <a href="media.html" class="hover:text-satorpGreen">MEDIA CENTER</a>
+        <a href="contact.html" class="hover:text-satorpGreen">CONTACT</a>
+      </div>
+
+      <!-- Bottom-left hero copy -->
+      <div class="absolute inset-0 flex items-end">
+        <div class="container-x pb-14">
+          <h1 class="font-[Rajdhani] font-light leading-[1.05] tracking-wide text-[34px] sm:text-[48px] md:text-[60px]">
+            Careers at SATORP
+          </h1>
+          <p class="mt-2 text-white/90 text-sm sm:text-base max-w-xl">
+            Shape the future of energy with us.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rounded seam -->
+  <div class="bg-white rounded-corner -mt-6 md:-mt-10"></div>
+
+  <!-- JOIN OUR TEAM -->
+  <section class="bg-white text-[#2e3781] pt-10 md:pt-14 pb-12">
+    <div class="container-x grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="font-[Rajdhani] font-light leading-tight text-[30px] sm:text-[40px] md:text-[44px]">
+          <span class="text-satorpGreen">Join</span> <span class="text-satorpBlue">Our Team</span>
+        </h2>
+      </div>
+      <div class="text-sm sm:text-[15px] leading-relaxed text-satorpDark/90 max-w-[640px]">
+        <p>
+          At <strong class="text-satorpBlue">SATORP</strong>, we empower talented individuals to thrive in an
+          environment of
+          innovation, safety, and sustainability. We offer global opportunities while investing in national
+          capabilities.
+          All job applications must be submitted through our official careers portal.
+        </p>
+        <a href="#" class="mt-4 inline-flex items-center gap-2 text-satorpBlue underline">
+          Apply Now
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVELOPMENT PROGRAMS (full-bleed background + perfectly centered alignment) -->
+  <section class="relative">
+    <div class="relative left-1/2 -translate-x-1/2 w-screen">
+      <!-- Background image -->
+      <img src="assets/images/6.jpg" onerror="this.src='assets/images/12.jpg'" alt="Development programs"
+        class="block w-full h-[680px] md:h-[740px] object-cover" />
+      <div class="absolute inset-0 bg-black/22"></div>
+
+      <!-- Foreground content -->
+      <div class="absolute inset-0">
+        <div class="container-x h-full">
+          <!-- KEY FIX: center both columns vertically and align side-by-side -->
+          <div class="h-full flex flex-col md:flex-row items-center md:items-center justify-between gap-8 md:gap-12">
+            <!-- Left column (now vertically centered, not absolutely positioned) -->
+            <div class="text-white md:max-w-[620px] lg:max-w-[700px] self-center">
+              <h3 class="font-[Rajdhani] font-semibold text-[26px] sm:text-[30px] md:text-[34px]">
+                Development Programs
+              </h3>
+              <p class="mt-2 text-white/90 text-[12px] sm:text-[13px] leading-relaxed">
+                At SATORP, we are committed to nurturing talent and advancing careers through structured
+                learning and development initiatives. Our programs are designed to equip individuals with the
+                skills, experience, and mindset needed to excel in the energy industry – locally and globally.
+              </p>
+            </div>
+
+            <!-- Right column (floating accordion card) -->
+            <div class="w-full md:w-auto self-center">
+              <div class="bg-white text-[#2e3781] rounded-[1.75rem]
+                     shadow-[0_30px_70px_rgba(0,0,0,0.25)] ring-1 ring-[#e9ecff]
+                     w-full sm:w-[520px] md:w-[560px] lg:w-[620px]
+                     p-6 sm:p-7 md:p-8">
+                <!-- Item 1 -->
+                <details open class="group">
+                  <summary class="list-none flex items-center justify-between cursor-pointer py-2">
+                    <span class="font-semibold">Highlights</span>
+                    <span
+                      class="relative w-7 h-7 rounded-full border border-[#cfd5ff] flex items-center justify-center">
+                      <svg class="w-3.5 h-3.5 text-[#404aa3] transition-transform duration-300 group-open:rotate-45"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="text-[13px] leading-relaxed text-satorpDark/90 pt-1 pb-4">
+                    SATORP’s development programs reflect our belief that people are our greatest asset.
+                    We combine technical training, international best practices, and leadership development to cultivate
+                    a
+                    highly skilled workforce. Whether you’re a student, a recent graduate, or an experienced
+                    professional,
+                    we offer dynamic opportunities to grow and contribute to the future of sustainable energy.
+                  </div>
+                </details>
+
+                <hr class="my-2 border-gray-200" />
+
+                <!-- Item 2 -->
+                <details class="group">
+                  <summary class="list-none flex items-center justify-between cursor-pointer py-3">
+                    <span class="font-medium">Apprenticeship</span>
+                    <span
+                      class="relative w-7 h-7 rounded-full border border-[#cfd5ff] flex items-center justify-center">
+                      <svg class="w-3.5 h-3.5 text-[#404aa3] transition-transform duration-300 group-open:rotate-45"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="text-[13px] leading-relaxed text-satorpDark/90 pb-4">
+                    Hands-on learning that blends classroom training and on-the-job experience with mentoring
+                    by seasoned professionals across SATORP’s operations.
+                  </div>
+                </details>
+
+                <hr class="my-2 border-gray-200" />
+
+                <!-- Item 3 -->
+                <details class="group">
+                  <summary class="list-none flex items-center justify-between cursor-pointer py-3">
+                    <span class="font-medium">Advanced Studies</span>
+                    <span
+                      class="relative w-7 h-7 rounded-full border border-[#cfd5ff] flex items-center justify-center">
+                      <svg class="w-3.5 h-3.5 text-[#404aa3] transition-transform duration-300 group-open:rotate-45"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="text-[13px] leading-relaxed text-satorpDark/90">
+                    Support for specialized certifications and postgraduate education to advance technical,
+                    leadership, and innovation capabilities.
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#1f2960] text-white relative overflow-hidden pt-20 pb-10">
+    <svg class="absolute inset-0 hidden lg:block w-full h-full z-0 pointer-events-none" viewBox="0 0 1440 600"
+      fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1000 0 C1150 200, 1250 400, 1440 600" stroke="#00adef" stroke-width="1" />
+      <path d="M1440 0 C1300 200, 1200 400, 1000 600" stroke="#64bc46" stroke-width="1" />
+    </svg>
+    <div class="relative z-10 container-x grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="flex flex-col justify-between text-center md:text-left">
+        <div>
+          <h3 class="text-3xl sm:text-4xl lg:text-5xl font-light leading-tight mb-4">
+            <span class="text-satorpGreen font-semibold">Ex</span><span class="text-satorpBlue">panding</span><br />
+            <span class="text-satorpGreen font-semibold">Ex</span><span class="text-satorpBlue">cellence</span>
+            <sup class="text-satorpBlue text-sm">™</sup>
+          </h3>
+        </div>
+        <p class="hidden md:block text-[10px] sm:text-xs text-gray-400 mt-8 sm:mt-16 max-w-xs sm:max-w-full">
+          © Saudi Aramco Total Refining and Petrochemical Co. SATORP
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6 text-center md:text-left">
+        <div>
+          <h4 class="uppercase text-xs sm:text-sm text-gray-300 font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">What We Do</a></li>
+            <li><a href="#" class="hover:underline">Sustainability</a></li>
+            <li><a href="#" class="hover:underline">News & Media</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="uppercase text-xs sm:text-sm text-gray-300 font-semibold mb-3">Legal</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#" class="hover:underline">Cookie Consent</a></li>
+            <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:underline">Privacy Notice</a></li>
+            <li><a href="#" class="hover:underline">Disclaimers</a></li>
+            <li><a href="#" class="hover:underline">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center md:items-end space-y-6">
+        <div class="flex flex-wrap justify-center lg:justify-end gap-4">
+          <a href="#"
+            class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5a3.5 3.5 0 013.7-3.5c1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.3V12H18l-.5 3h-2.8v7A10 10 0 0022 12z" />
+            </svg>
+          </a>
+          <a href="#"
+            class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.5.5.2.8.5 1.2 1 .3.4.6 1 .8 2.1.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.5 2.2-.2.5-.5.8-1 .8-.4.3-1 .6-2.1.8-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.5-.5-.2-.8-.5-1-.8-.3-.4-.6-1-.8-2.1-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.5-2.2.2-.5.5-.8.8-1.2.4-.3 1-.6 2.1-.8C8.4 2.2 8.8 2.2 12 2.2z" />
+              <circle cx="12" cy="12" r="3.2" />
+            </svg>
+          </a>
+          <a href="#"
+            class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.3 2H3.7C2.8 2 2 2.8 2 3.7v16.6C2 21.2 2.8 22 3.7 22h16.6c.9 0 1.7-.8 1.7-1.7V3.7c0-.9-.8-1.7-1.7-1.7zM8.7 17H6l4.2-4.8L6.4 7h2.6l2.4 2.8 2.2-2.8h2.5l-4 4.7L18 17h-2.6l-2.8-3.3L8.7 17z" />
+            </svg>
+          </a>
+          <a href="#"
+            class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.7 2.2 5 5 5h14c2.8 0 5-2.3 5-5v-14c0-2.8-2.2-5-5-5zM7 20h-3v-11h3v11zM5.5 7.5c-1 0-1.8-.8-1.8-1.8S4.5 4 5.5 4s1.8.8 1.8 1.8-.8 1.7-1.8 1.7zM20 20h-3v-5.5c0-1.4-.5-2.3-1.6-2.3-1 0-1.5.7-1.8 1.3-.1.3-.1.7-.1 1.1V20h-3s.1-9 0-11h3v1.6c.4-.6 1.1-1.6 2.8-1.6 2.1 0 3.7 1.4 3.7 4.4V20z" />
+            </svg>
+          </a>
+        </div>
+        <div class="mt-auto">
+          <img src="assets/images/logo_white.png" alt="SATORP Logo" class="h-16 sm:h-20" />
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 block md:hidden text-center text-[10px] sm:text-xs text-gray-400 px-4 sm:px-6 lg:px-8">
+      © Saudi Aramco Total Refining and Petrochemical Co. SATORP
+    </div>
+  </footer>
+
+  <!-- (Optional) your global scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

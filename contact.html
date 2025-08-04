@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Satorp | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <!-- Tailwind + your custom palette -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <!-- Fonts & shared css -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-white">
+
+    <!-- Top Bar -->
+    <div
+        class="w-full top-gradient text-white text-xs sm:text-sm flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 container-x py-3">
+        <div class="flex flex-row flex-wrap gap-2 items-center justify-center md:justify-start">
+            <span class="font-medium">العربية</span>
+            <span class="hidden sm:inline-block">|</span>
+            <span class="font-medium">English</span>
+        </div>
+        <div class="flex flex-row flex-wrap gap-2 items-center justify-center md:justify-end text-[11px] sm:text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+            </svg>
+            <span>Search</span>
+            <span class="hidden sm:inline-block">|</span>
+            <span class="text-center md:text-left">Constantly push the boundaries of what's possible</span>
+        </div>
+    </div>
+
+    <!-- Header over white -->
+    <header class="relative">
+        <div class="container-x py-4 flex items-center justify-between">
+            <nav class="hidden lg:flex gap-6 text-[#2e3781] font-semibold text-sm xl:text-base">
+                <a href="index.html" class="hover:text-satorpGreen">HOME</a>
+                <a href="about.html" class="hover:text-satorpGreen">ABOUT</a>
+                <a href="business.html" class="hover:text-satorpGreen">WHAT WE DO</a>
+                <a href="sustainability.html" class="hover:text-satorpGreen">SUSTAINABILITY</a>
+                <a href="careers.html" class="hover:text-satorpGreen">CAREERS</a>
+                <a href="media.html" class="hover:text-satorpGreen">MEDIA CENTER</a>
+                <a href="contact.html" class="text-satorpGreen">CONTACT</a>
+            </nav>
+            <button id="menuBtn" class="lg:hidden text-[#2e3781] focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <img src="assets/images/logo.png" alt="Logo" class="w-[140px] sm:w-[170px] h-[111px]" />
+        </div>
+    </header>
+    <!-- Mobile Sidebar (same as index) -->
+    <div id="mobileSidebar" class="fixed top-0 right-0 w-64 h-full bg-[#1f2960] text-white
+       transform translate-x-full transition-transform duration-300
+       z-50 shadow-lg flex flex-col p-6 space-y-4 lg:hidden">
+        <button id="closeMenu" class="self-end text-white mb-6" aria-label="Close menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- Your links -->
+        <a href="index.html" class="hover:text-satorpGreen">HOME</a>
+        <a href="about.html" class="hover:text-satorpGreen">ABOUT</a>
+        <a href="business.html" class="hover:text-satorpGreen">WHAT WE DO</a>
+        <a href="sustainability.html" class="hover:text-satorpGreen">SUSTAINABILITY</a>
+        <a href="careers.html" class="hover:text-satorpGreen">CAREERS</a>
+        <a href="media.html" class="hover:text-satorpGreen">MEDIA CENTER</a>
+        <a href="contact.html" class="hover:text-satorpGreen">CONTACT</a>
+    </div>
+
+    <!-- Intro / Get in Touch -->
+    <section class="bg-white text-[#2e3781] pt-6 sm:pt-10 pb-10 sm:pb-14">
+        <div class="container-x grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
+            <!-- Left -->
+            <div class="md:col-span-8">
+                <p class="text-[12px] sm:text-xs text-satorpDark/70 mb-3">Get in Touch</p>
+                <h1 class="font-[Rajdhani] font-light leading-[1.1] tracking-tight
+                   text-[30px] sm:text-[40px] md:text-[48px]">
+                    <span class="text-satorpGreen">Whether you’re looking for</span><br class="hidden sm:block" />
+                    <span class="text-satorpBlue">information, services, or</span><br class="hidden sm:block" />
+                    <span class="text-satorpBlue">partnerships — we’re here to</span><br class="hidden sm:block" />
+                    <span class="text-satorpGreen">help.</span>
+                </h1>
+            </div>
+
+            <!-- Right -->
+            <div class="md:col-span-4">
+                <ul class="space-y-6 text-[13px] sm:text-[14px] leading-snug">
+                    <li>
+                        <p class="uppercase text-[11px] text-satorpDark/60 mb-1">Email</p>
+                        <a href="mailto:info@satorp.com"
+                            class="text-[#2e3781] hover:text-satorpBlue underline">info@satorp.com</a>
+                    </li>
+                    <li>
+                        <p class="uppercase text-[11px] text-satorpDark/60 mb-1">Phone</p>
+                        <a href="tel:+966133580000" class="text-[#2e3781] hover:text-satorpBlue">+966 13 358 0000</a>
+                    </li>
+                    <li>
+                        <p class="uppercase text-[11px] text-satorpDark/60 mb-2">Social Media</p>
+                        <div class="flex items-center gap-3">
+                            <!-- Social Buttons -->
+                            <a href="#"
+                                class="w-8 h-8 rounded-full border border-[#cfd5ff] text-[#2e3781] flex items-center justify-center">
+                                <!-- FB -->
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5a3.5 3.5 0 013.7-3.5c1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.3V12H18l-.5 3h-2.8v7A10 10 0 0022 12z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-8 h-8 rounded-full border border-[#cfd5ff] text-[#2e3781] flex items-center justify-center">
+                                <!-- IG -->
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.5.5.2.8.5 1.2 1 .3.4.6 1 .8 2.1.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.5 2.2-.2.5-.5.8-1 .8-.4.3-1 .6-2.1.8-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.5-.5-.2-.8-.5-1-.8-.3-.4-.6-1-.8-2.1-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.5-2.2.2-.5.5-.8.8-1.2.4-.3 1-.6 2.1-.8C8.4 2.2 8.8 2.2 12 2.2z" />
+                                    <circle cx="12" cy="12" r="3.2" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-8 h-8 rounded-full border border-[#cfd5ff] text-[#2e3781] flex items-center justify-center">
+                                <!-- X/Twitter -->
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.3 2H3.7C2.8 2 2 2.8 2 3.7v16.6C2 21.2 2.8 22 3.7 22h16.6c.9 0 1.7-.8 1.7-1.7V3.7c0-.9-.8-1.7-1.7-1.7zM8.7 17H6l4.2-4.8L6.4 7h2.6l2.4 2.8 2.2-2.8h2.5l-4 4.7L18 17h-2.6l-2.8-3.3L8.7 17z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-8 h-8 rounded-full border border-[#cfd5ff] text-[#2e3781] flex items-center justify-center">
+                                <!-- LinkedIn -->
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.7 2.2 5 5 5h14c2.8 0 5-2.3 5-5v-14c0-2.8-2.2-5-5-5zM7 20h-3v-11h3v11zM5.5 7.5c-1 0-1.8-.8-1.8-1.8S4.5 4 5.5 4s1.8.8 1.8 1.8-.8 1.7-1.8 1.7zM20 20h-3v-5.5c0-1.4-.5-2.3-1.6-2.3-1 0-1.5.7-1.8 1.3-.1.3-.1.7-.1 1.1V20h-3s.1-9 0-11h3v1.6c.4-.6 1.1-1.6 2.8-1.6 2.1 0 3.7 1.4 3.7 4.4V20z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP (full-bleed) -->
+    <section class="relative">
+        <div class="relative left-1/2 -translate-x-1/2 w-screen">
+            <!-- Dynamic embed target -->
+            <div id="mapEmbed" data-lat="26.985214" data-lng="49.630462" data-zoom="13"
+                class="w-full h-[420px] sm:h-[520px] md:h-[560px] bg-[#eaeef9]">
+                <!-- Fallback for no-JS -->
+                <iframe class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://maps.google.com/maps?q=26.985214,49.630462&z=13&output=embed">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Our E-Services -->
+    <section class="bg-white text-[#2e3781] py-12 sm:py-16">
+        <div class="container-x">
+            <h2 class="font-[Rajdhani] font-light leading-tight text-[30px] sm:text-[38px] md:text-[44px] mb-8">
+                <span class="text-satorpBlue">Access Our</span><br class="hidden sm:block" />
+                <span class="text-satorpGreen">E-Services</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+                <!-- Card 1 -->
+                <div>
+                    <h3 class="flex items-center gap-2 font-[Rajdhani] text-[22px] sm:text-[24px] text-satorpGreen">
+                        MYHR Access
+                        <span
+                            class="inline-flex w-5 h-5 rounded-full border border-satorpBlue text-satorpBlue items-center justify-center text-[12px]">○</span>
+                    </h3>
+                    <p class="mt-1 text-[12px] sm:text-[13px] text-satorpDark/70">
+                        Employee HR Portal Access
+                    </p>
+                    <p class="mt-2 text-[12px] leading-relaxed text-satorpDark/80 max-w-[32rem]">
+                        Secure login for employees to access personal HR services, pay statements, learning
+                        records &amp; balances, training records, and more.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div>
+                    <h3 class="flex items-center gap-2 font-[Rajdhani] text-[22px] sm:text-[24px] text-satorpGreen">
+                        Corporate Portal
+                        <span
+                            class="inline-flex w-5 h-5 rounded-full border border-satorpBlue text-satorpBlue items-center justify-center text-[12px]">○</span>
+                    </h3>
+                    <p class="mt-1 text-[12px] sm:text-[13px] text-satorpDark/70">
+                        Corporate Portal Access
+                    </p>
+                    <p class="mt-2 text-[12px] leading-relaxed text-satorpDark/80 max-w-[32rem]">
+                        Provides SATORP internal departments and employees with structured access to
+                        core business tools, documents, reports, and key internal resources.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div>
+                    <h3 class="flex items-center gap-2 font-[Rajdhani] text-[22px] sm:text-[24px] text-satorpGreen">
+                        Supplier Portal
+                        <span
+                            class="inline-flex w-5 h-5 rounded-full border border-satorpBlue text-satorpBlue items-center justify-center text-[12px]">○</span>
+                    </h3>
+                    <p class="mt-1 text-[12px] sm:text-[13px] text-satorpDark/70">
+                        Supplier Portal Access
+                    </p>
+                    <p class="mt-2 text-[12px] leading-relaxed text-satorpDark/80 max-w-[32rem]">
+                        An exclusive gateway for suppliers to manage profiles, receive purchase orders,
+                        submit invoices, and maintain communication with SATORP.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1f2960] text-white relative overflow-hidden pt-20 pb-10">
+        <svg class="absolute inset-0 hidden lg:block w-full h-full z-0 pointer-events-none" viewBox="0 0 1440 600"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1000 0 C1150 200, 1250 400, 1440 600" stroke="#00adef" stroke-width="1" />
+            <path d="M1440 0 C1300 200, 1200 400, 1000 600" stroke="#64bc46" stroke-width="1" />
+        </svg>
+        <div class="relative z-10 container-x grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Column 1 -->
+            <div class="flex flex-col justify-between text-center md:text-left">
+                <div>
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-light leading-tight mb-4">
+                        <span class="text-satorpGreen font-semibold">Ex</span><span
+                            class="text-satorpBlue">panding</span><br />
+                        <span class="text-satorpGreen font-semibold">Ex</span><span
+                            class="text-satorpBlue">cellence</span>
+                        <sup class="text-satorpBlue text-sm">™</sup>
+                    </h3>
+                </div>
+                <p class="hidden md:block text-[10px] sm:text-xs text-gray-400 mt-8 sm:mt-16 max-w-xs sm:max-w-full">
+                    © Saudi Aramco Total Refining and Petrochemical Co. SATORP
+                </p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="grid grid-cols-2 gap-6 text-center md:text-left">
+                <div>
+                    <h4 class="uppercase text-xs sm:text-sm text-gray-300 font-semibold mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="#" class="hover:underline">About</a></li>
+                        <li><a href="#" class="hover:underline">What We Do</a></li>
+                        <li><a href="#" class="hover:underline">Sustainability</a></li>
+                        <li><a href="#" class="hover:underline">News & Media</a></li>
+                        <li><a href="#" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="uppercase text-xs sm:text-sm text-gray-300 font-semibold mb-3">Legal</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a href="#" class="hover:underline">Cookie Consent</a></li>
+                        <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:underline">Privacy Notice</a></li>
+                        <li><a href="#" class="hover:underline">Disclaimers</a></li>
+                        <li><a href="#" class="hover:underline">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="flex flex-col items-center md:items-end space-y-6">
+                <div class="flex flex-wrap justify-center lg:justify-end gap-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5a3.5 3.5 0 013.7-3.5c1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.3V12H18l-.5 3h-2.8v7A10 10 0 0022 12z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.5.5.2.8.5 1.2 1 .3.4.6 1 .8 2.1.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.5 2.2-.2.5-.5.8-1 .8-.4.3-1 .6-2.1.8-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.5-.5-.2-.8-.5-1-.8-.3-.4-.6-1-.8-2.1-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.5-2.2.2-.5.5-.8.8-1.2.4-.3 1-.6 2.1-.8C8.4 2.2 8.8 2.2 12 2.2z" />
+                            <circle cx="12" cy="12" r="3.2" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.3 2H3.7C2.8 2 2 2.8 2 3.7v16.6C2 21.2 2.8 22 3.7 22h16.6c.9 0 1.7-.8 1.7-1.7V3.7c0-.9-.8-1.7-1.7-1.7zM8.7 17H6l4.2-4.8L6.4 7h2.6l2.4 2.8 2.2-2.8h2.5l-4 4.7L18 17h-2.6l-2.8-3.3L8.7 17z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.7 2.2 5 5 5h14c2.8 0 5-2.3 5-5v-14c0-2.8-2.2-5-5-5zM7 20h-3v-11h3v11zM5.5 7.5c-1 0-1.8-.8-1.8-1.8S4.5 4 5.5 4s1.8.8 1.8 1.8-.8 1.7-1.8 1.7zM20 20h-3v-5.5c0-1.4-.5-2.3-1.6-2.3-1 0-1.5.7-1.8 1.3-.1.3-.1.7-.1 1.1V20h-3s.1-9 0-11h3v1.6c.4-.6 1.1-1.6 2.8-1.6 2.1 0 3.7 1.4 3.7 4.4V20z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="mt-auto">
+                    <img src="assets/images/logo_white.png" alt="SATORP Logo" class="h-16 sm:h-20" />
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 block md:hidden text-center text-[10px] sm:text-xs text-gray-400 px-4 sm:px-6 lg:px-8">
+            © Saudi Aramco Total Refining and Petrochemical Co. SATORP
+        </div>
+    </footer>
+
+    <!-- Tiny map initializer (key-free, safe to remove if you keep the iframe fallback) -->
+    <script>
+        (function () {
+            var el = document.getElementById('mapEmbed');
+            if (!el) return;
+            var lat = el.getAttribute('data-lat') || '26.985214';
+            var lng = el.getAttribute('data-lng') || '49.630462';
+            var zoom = el.getAttribute('data-zoom') || '13';
+            // Key-free Google embed using lat/lng
+            var src = 'https://maps.google.com/maps?q=' + encodeURIComponent(lat + ',' + lng) +
+                '&z=' + encodeURIComponent(zoom) + '&output=embed';
+            el.innerHTML = '<iframe class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="' + src + '"></iframe>';
+        })();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- Sidebar Toggle Script -->
+    <script src="assets/js/tailwind.config.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

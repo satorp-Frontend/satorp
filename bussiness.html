@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Satorp | Business Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body class="bg-white text-white">
+
+  <!-- Top bar -->
+  <div class="w-full top-gradient text-white text-xs sm:text-sm flex flex-col md:flex-row justify-between items-center gap-2 container-x py-3">
+    <div class="flex flex-row flex-wrap gap-2 items-center">
+      <span class="font-medium">العربية</span><span class="hidden sm:inline-block">|</span><span class="font-medium">English</span>
+    </div>
+    <div class="flex flex-row flex-wrap gap-2 items-center text-[11px] sm:text-sm">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z"/></svg>
+      <span>Search</span><span class="hidden sm:inline-block">|</span>
+      <span class="text-center md:text-left">Constantly push the boundaries of what's possible</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="relative w-full min-h-[500px] sm:min-h-[600px] md:min-h-[720px]">
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+      <source src="assets/videos/1.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-black/45 z-10"></div>
+
+    <header class="absolute top-0 left-0 right-0 z-20">
+      <div class="container-x py-4 flex items-center justify-between">
+        <nav class="hidden lg:flex gap-6 text-white font-semibold text-sm xl:text-base">
+          <a href="index.html" class="hover:text-satorpGreen">HOME</a>
+          <a href="about.html" class="hover:text-satorpGreen">ABOUT</a>
+          <a href="business.html" class="hover:text-satorpGreen">WHAT WE DO</a>
+          <a href="sustainability.html" class="hover:text-satorpGreen">SUSTAINABILITY</a>
+          <a href="careers.html" class="hover:text-satorpGreen">CAREERS</a>
+          <a href="media.html" class="hover:text-satorpGreen">MEDIA CENTER</a>
+          <a href="contact.html" class="hover:text-satorpGreen">CONTACT</a>
+        </nav>
+
+        <button id="menuBtn" class="lg:hidden text-white focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+        <img src="assets/images/logo.png" alt="Logo" class="w-[140px] sm:w-[170px] h-[111px]" />
+      </div>
+    </header>
+
+    <!-- mobile sidebar -->
+    <div id="mobileSidebar" class="fixed top-0 right-0 w-64 h-full bg-[#1f2960] text-white translate-x-full transition-transform duration-300 z-50 shadow-lg flex flex-col p-6 space-y-4 lg:hidden">
+      <button id="closeMenu" class="self-end text-white mb-6">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <a href="index.html" class="hover:text-satorpGreen">HOME</a>
+      <a href="about.html" class="hover:text-satorpGreen">ABOUT</a>
+      <a href="business.html" class="hover:text-satorpGreen">WHAT WE DO</a>
+      <a href="sustainability.html" class="hover:text-satorpGreen">SUSTAINABILITY</a>
+      <a href="careers.html" class="hover:text-satorpGreen">CAREERS</a>
+      <a href="media.html" class="hover:text-satorpGreen">MEDIA CENTER</a>
+      <a href="contact.html" class="hover:text-satorpGreen">CONTACT</a>
+    </div>
+
+    <!-- hero copy -->
+    <div class="absolute bottom-20 left-0 z-20 container-x">
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-light text-white mb-3 leading-tight tracking-wide">Our Business</h1>
+      <p class="text-base sm:text-lg md:text-2xl text-white/90 max-w-3xl">Driving value through innovation, technology, and strategic collaboration.</p>
+    </div>
+  </div>
+
+  <!-- WHITE WRAP (rounded top) + Business Units -->
+  <section class="relative z-20 -mt-6 md:-mt-10 bg-white text-[#2e3781] rounded-t-[2rem] pb-14">
+    <div class="container-x pt-10 md:pt-14">
+      <div class="grid grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-10 md:gap-14 items-start">
+        <div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight">
+            <span class="bg-gradient-to-r from-[#64bc46] to-[#00adef] bg-clip-text text-transparent">Business Units</span><br/>
+            <span class="text-satorpBlue">at a Glance</span>
+          </h2>
+        </div>
+        <div class="text-sm sm:text-base md:text-[15px] lg:text-[16px] leading-relaxed">
+          <p>
+            <strong class="text-satorpBlue">SATORP</strong> operates through a network of specialized business units that collaboratively
+            manage the refinery’s full value chain—from feedstock intake and processing to product delivery and global export.
+            Each unit plays a key role in ensuring operational excellence, safety, sustainability, and long-term economic contribution.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cards row -->
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Operations -->
+        <article class="relative group rounded-[1.5rem] overflow-hidden shadow-md">
+          <img src="assets/images/2.jpg" alt="Operations" class="w-full h-[320px] sm:h-[360px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h3 class="text-[13px] sm:text-sm font-semibold opacity-95">Operations</h3>
+            <p class="mt-1 text-[11px] sm:text-xs opacity-80">
+              Manages refinery processes, controls production units, and ensures quality standards are met.
+            </p>
+          </div>
+        </article>
+
+        <!-- Maintenance & Reliability -->
+        <article class="relative group rounded-[1.5rem] overflow-hidden shadow-md">
+          <img src="assets/images/3.jpg" alt="Maintenance & Reliability" class="w-full h-[320px] sm:h-[360px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h3 class="text-[13px] sm:text-sm font-semibold opacity-95">Maintenance & Reliability</h3>
+            <p class="mt-1 text-[11px] sm:text-xs opacity-80">
+              Ensures continuous operations by maintaining equipment health and addressing potential risks.
+            </p>
+          </div>
+        </article>
+
+        <!-- Technical Services -->
+        <article class="relative group rounded-[1.5rem] overflow-hidden shadow-md">
+          <img src="assets/images/bridge.jpg" onerror="this.src='assets/images/8.jpg'" alt="Technical Services" class="w-full h-[320px] sm:h-[360px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h3 class="text-[13px] sm:text-sm font-semibold opacity-95">Technical Services</h3>
+            <p class="mt-1 text-[11px] sm:text-xs opacity-80">
+              Oversees process optimization, lab analysis, and technical troubleshooting.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- slim progress line -->
+      <div class="mt-6">
+        <div class="h-[6px] w-full bg-gray-200 rounded-full relative overflow-hidden">
+          <div class="absolute left-0 top-0 h-full w-[26%] rounded-full bg-gradient-to-r from-satorpGreen via-satorpGreen to-satorpBlue"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- INNOVATING FOR A SMARTER FUTURE — full-bleed image + centered pill -->
+<section class="relative my-10 md:my-16">
+    <!-- full-bleed wrapper (escapes any page container) -->
+    <div class="relative left-1/2 -translate-x-1/2 w-screen">
+      <!-- Background image -->
+      <img
+        src="assets/images/22.jpg"
+        onerror="this.src='assets/images/12.jpg'"
+        alt="Industrial night view"
+        class="block w-full h-[460px] sm:h-[520px] md:h-[600px] lg:h-[680px] object-cover" />
+  
+      <!-- Floating pill (centered horizontally, near the bottom) -->
+      <div class="absolute inset-x-0 bottom-6 sm:bottom-8 md:bottom-10 flex justify-center px-4 sm:px-6 md:px-8">
+        <div
+          class="w-full max-w-[1100px]
+                 bg-white text-[#2e3781]
+                 rounded-[24px] md:rounded-[28px]
+                 p-5 sm:p-7 md:p-8
+                 shadow-[0_12px_40px_rgba(0,0,0,0.25)]">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start">
+            <h3 class="font-[Rajdhani] font-medium leading-[1.05]
+                       text-[26px] sm:text-[32px] md:text-[40px]">
+              Innovating for a<br class="hidden sm:block" />Smarter Future
+            </h3>
+            <p class="text-[#6f77b3] leading-relaxed
+                      text-[13px] sm:text-[14px] md:text-[15px]">
+              At SATORP, technology is not an option—it’s the foundation of our success.
+              We integrate cutting-edge digital systems, process automation, and
+              predictive analytics to optimize production, improve safety, and reduce emissions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FROM RAW INPUTS -->
+  <section class="bg-[#F1F1F1] pt-12 md:pt-16 pb-14">
+    <div class="container-x">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-16 mb-10 md:mb-12">
+        <div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
+            <span class="text-satorpGreen">From <span class="bg-gradient-to-r from-[#64bc46] to-[#00adef] text-transparent bg-clip-text">Raw</span> Inputs to</span><br/>
+            <span class="text-satorpBlue">Refined Excellence.</span>
+          </h2>
+        </div>
+        <div class="text-satorpDark text-sm sm:text-base leading-relaxed max-w-prose">
+          <p>
+            SATORP transforms heavy crude oil into high-value refined products using advanced technologies and best-in-class
+            operational systems. Our operations are designed to maximize yield, ensure safety, and minimize environmental impact.
+          </p>
+        </div>
+      </div>
+
+      <!-- product cards (with round arrow) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <!-- LPG -->
+        <article class="relative group rounded-[1.75rem] overflow-hidden shadow-md bg-white">
+          <img src="assets/images/2.jpg" alt="LPG" class="w-full h-[320px] sm:h-[360px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white pr-16">
+            <h4 class="text-sm sm:text-base font-semibold">LPG</h4>
+            <p class="mt-1 text-[11px] sm:text-xs opacity-90">
+              Used as fuel for heating, cooking, and industrial processes with lower emissions.
+            </p>
+          </div>
+          <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-white flex items-center justify-center text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </article>
+
+        <!-- Propylene -->
+        <article class="relative group rounded-[1.75rem] overflow-hidden shadow-md bg-white">
+          <img src="assets/images/3.jpg" alt="Propylene" class="w-full h-[320px] sm:h-[360px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white pr-16">
+            <h4 class="text-sm sm:text-base font-semibold">Propylene</h4>
+            <p class="mt-1 text-[11px] sm:text-xs opacity-90">
+              Used in the production of plastics, textiles, packaging, and automotive components.
+            </p>
+          </div>
+          <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-white flex items-center justify-center text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </article>
+
+        <!-- Gasoline -->
+        <article class="relative group rounded-[1.75rem] overflow-hidden shadow-md bg-white">
+          <img src="assets/images/8.jpg" alt="Gasoline" class="w-full h-[320px] sm:h-[360px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white pr-16">
+            <h4 class="text-sm sm:text-base font-semibold">Gasoline</h4>
+            <p class="mt-1 text-[11px] sm:text-xs opacity-90">
+              Refined to meet international standards, powering vehicles with performance and efficiency.
+            </p>
+          </div>
+          <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full border border-white flex items-center justify-center text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </article>
+      </div>
+
+      <!-- long progress indicator -->
+      <div class="mt-8">
+        <div class="w-full h-[6px] bg-gray-200 rounded-full relative overflow-hidden">
+          <div class="absolute left-0 top-0 h-full w-[44%] bg-gradient-to-r from-satorpGreen via-satorpGreen to-satorpBlue rounded-full"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#1f2960] text-white relative overflow-hidden pt-20 pb-10">
+    <svg class="absolute inset-0 hidden lg:block w-full h-full z-0 pointer-events-none" viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1000 0 C1150 200, 1250 400, 1440 600" stroke="#00adef" stroke-width="1"/>
+      <path d="M1440 0 C1300 200, 1200 400, 1000 600" stroke="#64bc46" stroke-width="1"/>
+    </svg>
+    <div class="relative z-10 container-x grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="flex flex-col justify-between text-center md:text-left">
+        <h3 class="text-3xl sm:text-4xl lg:text-5xl font-light leading-tight mb-4">
+          <span class="text-satorpGreen font-semibold">Ex</span><span class="text-satorpBlue">panding</span><br/>
+          <span class="text-satorpGreen font-semibold">Ex</span><span class="text-satorpBlue">cellence</span>
+          <sup class="text-satorpBlue text-sm">™</sup>
+        </h3>
+        <p class="hidden md:block text-[10px] sm:text-xs text-gray-400 mt-8">© Saudi Aramco Total Refining and Petrochemical Co. SATORP</p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6 text-center md:text-left">
+        <div>
+          <h4 class="uppercase text-xs sm:text-sm text-gray-300 font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">What We Do</a></li>
+            <li><a href="#" class="hover:underline">Sustainability</a></li>
+            <li><a href="#" class="hover:underline">News & Media</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="uppercase text-xs sm:text-sm text-gray-300 font-semibold mb-3">Legal</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#" class="hover:underline">Cookie Consent</a></li>
+            <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:underline">Privacy Notice</a></li>
+            <li><a href="#" class="hover:underline">Disclaimers</a></li>
+            <li><a href="#" class="hover:underline">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center md:items-end space-y-6">
+        <div class="flex flex-wrap justify-center lg:justify-end gap-4">
+          <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5a3.5 3.5 0 013.7-3.5c1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.3V12H18l-.5 3h-2.8v7A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.5.5.2.8.5 1.2 1 .3.4.6 1 .8 2.1.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.5 2.2-.2.5-.5.8-1 .8-.4.3-1 .6-2.1.8-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.5-.5-.2-.8-.5-1-.8-.3-.4-.6-1-.8-2.1-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.5-2.2.2-.5.5-.8.8-1.2.4-.3 1-.6 2.1-.8C8.4 2.2 8.8 2.2 12 2.2z"/><circle cx="12" cy="12" r="3.2"/></svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.3 2H3.7C2.8 2 2 2.8 2 3.7v16.6C2 21.2 2.8 22 3.7 22h16.6c.9 0 1.7-.8 1.7-1.7V3.7c0-.9-.8-1.7-1.7-1.7zM8.7 17H6l4.2-4.8L6.4 7h2.6l2.4 2.8 2.2-2.8h2.5l-4 4.7L18 17h-2.6l-2.8-3.3L8.7 17z"/></svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.7 2.2 5 5 5h14c2.8 0 5-2.3 5-5v-14c0-2.8-2.2-5-5-5zM7 20h-3v-11h3v11zM5.5 7.5c-1 0-1.8-.8-1.8-1.8S4.5 4 5.5 4s1.8.8 1.8 1.8-.8 1.7-1.8 1.7zM20 20h-3v-5.5c0-1.4-.5-2.3-1.6-2.3-1 0-1.5.7-1.8 1.3-.1.3-.1.7-.1 1.1V20h-3s.1-9 0-11h3v1.6c.4-.6 1.1-1.6 2.8-1.6 2.1 0 3.7 1.4 3.7 4.4V20z"/></svg>
+          </a>
+        </div>
+        <img src="assets/images/logo_white.png" alt="SATORP Logo" class="h-16 sm:h-20 mt-auto" />
+      </div>
+    </div>
+    <div class="mt-10 block md:hidden text-center text-[10px] sm:text-xs text-gray-400 px-4">© Saudi Aramco Total Refining and Petrochemical Co. SATORP</div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

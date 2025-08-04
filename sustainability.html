@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Meta Tags and Title -->
+    <meta charset="UTF-8" />
+    <title>Satorp | Sustainability Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <!-- TailwindCSS setup with custom colors -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Google Fonts: Rajdhani -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Custom styles: font, gradients, container padding -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-white text-white">
+    <!-- Top Bar: Responsive language switch + search/info line -->
+    <div
+        class="w-full top-gradient text-white text-xs sm:text-sm flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 container-x py-3">
+        <!-- Language Switch -->
+        <div class="flex flex-row flex-wrap gap-2 items-center justify-center md:justify-start">
+            <span class="font-medium">العربية</span>
+            <span class="hidden sm:inline-block">|</span>
+            <span class="font-medium">English</span>
+        </div>
+        <!-- Search and Info -->
+        <div class="flex flex-row flex-wrap gap-2 items-center justify-center md:justify-end text-[11px] sm:text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+            </svg>
+            <span>Search</span>
+            <span class="hidden sm:inline-block">|</span>
+            <span class="text-center md:text-left">Constantly push the boundaries of what's possible</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative w-full min-h-[500px] sm:min-h-[600px] md:min-h-screen">
+        <!-- Background Image -->
+        <img src="assets/images/21.png" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+
+        <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+
+        <header class="absolute top-0 left-0 right-0 z-20">
+            <div class="container-x py-4 flex items-center justify-between">
+              <nav class="hidden lg:flex gap-6 text-white font-semibold text-sm xl:text-base">
+                <a href="index.html" class="hover:text-satorpGreen">HOME</a>
+                <a href="about.html" class="hover:text-satorpGreen">ABOUT</a>
+                <a href="business.html" class="hover:text-satorpGreen">WHAT WE DO</a>
+                <a href="sustainability.html" class="hover:text-satorpGreen">SUSTAINABILITY</a>
+                <a href="#" class="hover:text-satorpGreen">CAREERS</a>
+                <a href="#" class="hover:text-satorpGreen">MEDIA CENTER</a>
+                <a href="#" class="hover:text-satorpGreen">CONTACT</a>
+              </nav>
+      
+              <button id="menuBtn" class="lg:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+              </button>
+              <img src="assets/images/logo.png" alt="Logo" class="w-[140px] sm:w-[170px] h-[111px]" />
+            </div>
+          </header>
+      
+          <!-- mobile sidebar -->
+          <div id="mobileSidebar" class="fixed top-0 right-0 w-64 h-full bg-[#1f2960] text-white translate-x-full transition-transform duration-300 z-50 shadow-lg flex flex-col p-6 space-y-4 lg:hidden">
+            <button id="closeMenu" class="self-end text-white mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <a href="index.html" class="hover:text-satorpGreen">HOME</a>
+            <a href="about.html" class="hover:text-satorpGreen">ABOUT</a>
+            <a href="business.html" class="hover:text-satorpGreen">WHAT WE DO</a>
+            <a href="sustainability.html" class="hover:text-satorpGreen">SUSTAINABILITY</a>
+            <a href="careers.html" class="hover:text-satorpGreen">CAREERS</a>
+            <a href="media.html" class="hover:text-satorpGreen">MEDIA CENTER</a>
+            <a href="contact.html" class="hover:text-satorpGreen">CONTACT</a>
+          </div>
+
+        <!-- Hero Text -->
+        <div class="max-w-7xl container-x absolute bottom-24 left-0 z-20">
+            <h1
+                class="text-4xl sm:text-6xl md:text-7xl font-light text-white mb-4 leading-tight tracking-wide max-w-[90%] md:max-w-full">
+                About Sustainability at SATORP
+            </h1>
+            <p class="text-base sm:text-lg md:text-2xl text-white max-w-[95%] md:max-w-full leading-relaxed">
+                Discover how sustainability drives our strategy, operations, and long-term impact, aligning with Vision
+                2030 and global environmental goals.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section: Commitment to Sustainability -->
+    <section class="bg-white py-20 text-[#2e3781]">
+        <div class="container-x grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <!-- Left Title -->
+            <div>
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-light leading-tight font-[Rajdhani]">
+                    Our Commitment to a<br />
+                    <span
+                        class="bg-gradient-to-r from-[#64bc46] to-[#00adef] text-transparent bg-clip-text font-semibold">
+                        Sustainable Future
+                    </span>
+                </h2>
+            </div>
+
+            <!-- Right Text -->
+            <div>
+                <p class="text-sm sm:text-base md:text-[20px] font-medium leading-relaxed font-[Rajdhani]">
+                    <span class="font-bold">At SATORP</span>, sustainability is embedded in every aspect of our
+                    operations.
+                    We aim to minimize our environmental footprint, conserve resources, and foster innovation that
+                    supports
+                    a low-carbon future. Our strategy is aligned with global sustainability goals and the Kingdom’s
+                    Vision 2030.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: HSSE Commitment with Accordion -->
+    <section x-data="{ open: 'env' }" class="relative bg-cover bg-center bg-no-repeat"
+        style="background-image: url('assets/images/22.jpg');">
+        <div class="absolute inset-0 z-0"
+            style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.21) 0%, rgba(0, 0, 0, 0.37) 100%);"></div>
+
+        <div class="relative z-10 container-x grid grid-cols-1 lg:grid-cols-2 gap-12 py-24">
+            <div class="text-white max-w-xl px-4">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-light mb-6">
+                    Prioritizing Safety,<br />Securing Excellence
+                </h2>
+                <p class="text-sm sm:text-base leading-relaxed mb-6">
+                    We uphold the highest HSSE standards to protect our people, our partners, and the environment.
+                    Through robust safety protocols, continuous training, and proactive risk management, we ensure a
+                    secure, healthy, and compliant workplace that empowers everyone to work confidently and responsibly.
+                </p>
+                <a href="#" class="inline-flex items-center gap-2 text-white underline font-medium">
+                    View HSSE Policy
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 shadow-md min-h-[500px] max-h-[500px] overflow-hidden">
+                <!-- Accordion Item 1 -->
+                <div class="mb-6">
+                    <div class="flex items-center justify-between cursor-pointer"
+                        @click="open === 'env' ? open = '' : open = 'env'">
+                        <h3 class="text-satorpBlue font-semibold text-lg">Environment and Health</h3>
+                        <svg :class="open === 'env' ? 'rotate-180' : 'rotate-0'"
+                            class="w-5 h-5 text-satorpBlue transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                        </svg>
+                    </div>
+                    <div x-show="open === 'env'" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 -translate-y-2"
+                        x-transition:enter-end="opacity-100 translate-y-0"
+                        x-transition:leave="transition ease-in duration-200"
+                        x-transition:leave-start="opacity-100 translate-y-0"
+                        x-transition:leave-end="opacity-0 -translate-y-2" class="text-sm text-[#2e3781] mt-4 space-y-2">
+                        <p>
+                            We enable SATORP to achieve a world-class safety and environmental culture while
+                            safeguarding
+                            company premises. By integrating Health, Safety, Security, and Environment into daily
+                            operations, we enhance company performance, save lives, and protect assets.
+                        </p>
+                        <p>
+                            Our goal is to excel in environmental and health standards by adhering to all regulations,
+                            minimizing impacts, implementing effective waste management, raising awareness, and actively
+                            promoting sustainable practices that protect the environment and the well-being of our
+                            employees
+                            and contractors.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="border-t border-gray-200 py-4 flex flex-col cursor-pointer"
+                    @click="open === 'safety' ? open = '' : open = 'safety'">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#404aa3] font-medium">Safety</span>
+                        <svg :class="open === 'safety' ? 'rotate-180' : 'rotate-0'"
+                            class="w-5 h-5 text-[#404aa3] transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div x-show="open === 'safety'" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 -translate-y-2"
+                        x-transition:enter-end="opacity-100 translate-y-0"
+                        x-transition:leave="transition ease-in duration-200"
+                        x-transition:leave-start="opacity-100 translate-y-0"
+                        x-transition:leave-end="opacity-0 -translate-y-2" class="text-sm text-[#2e3781] mt-3">
+                        Safety content goes here.
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="border-t border-gray-200 py-4 flex flex-col cursor-pointer"
+                    @click="open === 'security' ? open = '' : open = 'security'">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#404aa3] font-medium">Security</span>
+                        <svg :class="open === 'security' ? 'rotate-180' : 'rotate-0'"
+                            class="w-5 h-5 text-[#404aa3] transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div x-show="open === 'security'" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 -translate-y-2"
+                        x-transition:enter-end="opacity-100 translate-y-0"
+                        x-transition:leave="transition ease-in duration-200"
+                        x-transition:leave-start="opacity-100 translate-y-0"
+                        x-transition:leave-end="opacity-0 -translate-y-2" class="text-sm text-[#2e3781] mt-3">
+                        Security content goes here.
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4 -->
+                <div class="border-t border-gray-200 py-4 flex flex-col cursor-pointer"
+                    @click="open === 'fire' ? open = '' : open = 'fire'">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#404aa3] font-medium">Fire Protection</span>
+                        <svg :class="open === 'fire' ? 'rotate-180' : 'rotate-0'"
+                            class="w-5 h-5 text-[#404aa3] transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div x-show="open === 'fire'" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 -translate-y-2"
+                        x-transition:enter-end="opacity-100 translate-y-0"
+                        x-transition:leave="transition ease-in duration-200"
+                        x-transition:leave-start="opacity-100 translate-y-0"
+                        x-transition:leave-end="opacity-0 -translate-y-2" class="text-sm text-[#2e3781] mt-3">
+                        Fire Protection content goes here.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Golden Safety Rules -->
+    <section class="bg-white py-28 text-[#2e3781]">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-16">
+
+                <!-- Left Text Column -->
+                <div class="w-full lg:w-[40%]">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-light leading-tight mb-6">
+                        <span class="block text-[#64bc46]">SATORP’s Golden</span>
+                        <span class="block text-[#00adef]">Safety Rules</span>
+                    </h2>
+                    <p class="text-base md:text-lg font-medium leading-relaxed">
+                        To foster a culture of safety and accountability, SATORP has defined nine Golden Safety Rules
+                        that every
+                        employee and contractor must follow. These rules are designed to prevent incidents, promote
+                        awareness,
+                        and ensure a consistent standard of safe behavior across all operations. By adhering to these
+                        principles,
+                        we collectively uphold our commitment to safety excellence.
+                    </p>
+                </div>
+
+                <!-- Right Cards Side-by-Side or Stacked on Small Screens -->
+                <div class="w-full lg:w-[60%] grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-[#e2e2e2] rounded-2xl h-[400px] sm:h-[450px] lg:h-[500px] p-6 flex flex-col justify-end shadow-md transition-all duration-300">
+                        <h3 class="text-[16px] font-semibold leading-snug">
+                            <span class="text-[#64bc46]">Personal</span>
+                            <span class="text-[#00adef]">Protective Equipment</span>
+                        </h3>
+                        <p class="text-sm font-semibold text-black leading-relaxed mt-3">
+                            Minimize exposure hazards that cause serious injuries or illnesses through proper use of
+                            PPE.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-[#e2e2e2] rounded-2xl h-[400px] sm:h-[450px] lg:h-[500px] p-6 flex flex-col justify-end shadow-md transition-all duration-300">
+                        <h3 class="text-[16px] font-semibold leading-snug">
+                            <span class="text-[#64bc46]">Management</span>
+                            <span class="text-[#00adef]">of Change</span>
+                        </h3>
+                        <p class="text-sm font-semibold text-black leading-relaxed mt-3">
+                            Ensure all modifications are reviewed and approved before implementation to control risks.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section: Citizenship Swiper Slider -->
+    <section class="bg-white text-[#2e3781] py-20">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-8">
+
+            <!-- Section Heading -->
+            <div class="mb-12">
+                <h2 class="text-3xl sm:text-4xl font-medium">
+                    <span class="text-satorpGreen">Citizenship</span><br />
+                    <span class="text-[#404aa3]">Empowering communities through purpose-driven initiatives.</span>
+                </h2>
+            </div>
+
+            <!-- Swiper Slider -->
+            <div class="swiper citizenshipSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="rounded-3xl overflow-hidden bg-white shadow-sm group transition-all max-w-xs sm:max-w-sm mx-auto">
+                            <div class="overflow-hidden">
+                                <img src="assets/images/4.jpg" alt="Internal Citizenship"
+                                    class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500 ease-in-out" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-sm mb-2 text-[#2e3781]">Internal Citizenship</h3>
+                                <p class="text-sm leading-relaxed">
+                                    We foster a supportive and engaging environment for our employees and their families
+                                    through
+                                    initiatives like health programs, safety awareness, and environmental workshops.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="rounded-3xl overflow-hidden bg-white shadow-sm group transition-all max-w-xs sm:max-w-sm mx-auto">
+                            <div class="overflow-hidden">
+                                <img src="assets/images/5.png" alt="External Citizenship"
+                                    class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500 ease-in-out" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-sm mb-2 text-[#2e3781]">External Citizenship</h3>
+                                <p class="text-sm leading-relaxed">
+                                    We support artisans, promote culture, and serve society through philanthropy and
+                                    sustainability programs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="rounded-3xl overflow-hidden bg-white shadow-sm group transition-all max-w-xs sm:max-w-sm mx-auto">
+                            <div class="overflow-hidden">
+                                <img src="assets/images/6.jpg" alt="Citizenship Continuity"
+                                    class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500 ease-in-out" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-sm mb-2 text-[#2e3781]">Citizenship Continuity</h3>
+                                <p class="text-sm leading-relaxed">
+                                    We create long-term value by supporting entrepreneurs and national development
+                                    programs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="rounded-3xl overflow-hidden bg-white shadow-sm group transition-all max-w-xs sm:max-w-sm mx-auto">
+                            <div class="overflow-hidden">
+                                <img src="assets/images/6.jpg" alt="Volunteering"
+                                    class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500 ease-in-out" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-sm mb-2 text-[#2e3781]">Volunteering</h3>
+                                <p class="text-sm leading-relaxed">
+                                    Volunteers engage in community service aligned with sustainability and social
+                                    values.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HSSE Section: Two-card layout with gradient text card and image background -->
+    <section class="pt-16 sm:pt-20 rounded-corner">
+        <div class="container-x">
+            <div class="flex flex-col lg:flex-row gap-y-10 lg:gap-x-10 mb-20">
+
+                <!-- Left Gradient Card -->
+                <div class="bg-gradient-to-br from-satorpGreen via-satorpGreen to-satorpBlue text-white
+                  rounded-[2.5rem] w-full lg:w-1/2 p-8 sm:p-10 flex flex-col justify-between
+                  min-h-[500px] sm:min-h-[600px]">
+                    <div>
+                        <h3 class="text-2xl sm:text-4xl md:text-5xl font-semibold leading-snug mb-6">
+                            Our Social Responsibility Strategy
+                        </h3>
+                    </div>
+                    <div>
+                        <p class="mb-4 text-sm sm:text-base font-medium">
+                            Guided by values. Committed to lasting impact.
+                        </p>
+                        <p class="text-sm sm:text-base leading-relaxed text-white/90">
+                            At SATORP, our Corporate Social Responsibility (CSR) strategy is more than a commitment —
+                            it's embedded in the way we operate. Aligned with both national priorities and global
+                            sustainability goals, our approach focuses on creating long-term value for people and the
+                            planet.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Image Card -->
+                <div
+                    class="relative group rounded-[2.5rem] overflow-hidden w-full lg:w-1/2 min-h-[500px] sm:min-h-[600px]">
+                    <div class="absolute inset-0">
+                        <img src="assets/images/6.jpg" alt="External Citizenship"
+                            class="w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" />
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 z-10 flex flex-col justify-end p-6 sm:p-10">
+                        <p class="mb-4 text-sm sm:text-base font-medium text-white">External Citizenship</p>
+                        <p class="text-sm sm:text-base leading-relaxed text-white/90">
+                            We invest in strategic initiatives that promote environmental stewardship through
+                            conservation and sustainability programs, advance education by empowering future generations
+                            with learning opportunities, support economic development by enabling local industries and
+                            entrepreneurs, and foster community empowerment through inclusive outreach and social
+                            initiatives. CSR at SATORP is not a separate function — it is a foundational mindset that
+                            guides every aspect of our operations.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer: Full layout with curved SVG and bottom copyright/logo row -->
+    <footer class="bg-[#1f2960] text-white relative overflow-hidden pt-20 pb-10">
+        <!-- Decorative SVG -->
+        <svg class="absolute inset-0 hidden lg:block w-full h-full z-0 pointer-events-none" viewBox="0 0 1440 600"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1000 0 C1150 200, 1250 400, 1440 600" stroke="#00adef" stroke-width="1" />
+            <path d="M1440 0 C1300 200, 1200 400, 1000 600" stroke="#64bc46" stroke-width="1" />
+        </svg>
+        <div class="relative z-10 container-x grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Column 1: Slogan -->
+            <div class="flex flex-col justify-between text-center md:text-left">
+                <div>
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-light leading-tight mb-4">
+                        <span class="text-satorpGreen font-semibold">Ex</span><span
+                            class="text-satorpBlue">panding</span><br />
+                        <span class="text-satorpGreen font-semibold">Ex</span><span
+                            class="text-satorpBlue">cellence</span>
+                        <sup class="text-satorpBlue text-sm">™</sup>
+                    </h3>
+                </div>
+                <p class="hidden md:block text-[10px] sm:text-xs text-gray-400 mt-8 sm:mt-16 max-w-xs sm:max-w-full">
+                    © Saudi Aramco Total Refining and Petrochemical Co. SATORP
+                </p>
+            </div>
+            <!-- Column 2: Links -->
+            <div class="grid grid-cols-2 gap-6 text-center md:text-left">
+                <div>
+                    <h4 class="uppercase text-xs sm:text-sm text-gray-300 font-semibold mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="#" class="hover:underline">About</a></li>
+                        <li><a href="#" class="hover:underline">What We Do</a></li>
+                        <li><a href="#" class="hover:underline">Sustainability</a></li>
+                        <li><a href="#" class="hover:underline">News & Media</a></li>
+                        <li><a href="#" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="uppercase text-xs sm:text-sm text-gray-300 font-semibold mb-3">Legal</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a href="#" class="hover:underline">Cookie Consent</a></li>
+                        <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:underline">Privacy Notice</a></li>
+                        <li><a href="#" class="hover:underline">Disclaimers</a></li>
+                        <li><a href="#" class="hover:underline">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Column 3: Social + Logo -->
+            <div class="flex flex-col items-center md:items-end space-y-6">
+                <!-- Icons -->
+                <div class="flex flex-wrap justify-center lg:justify-end gap-4">
+                    <!-- Social Icon Template -->
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+                        <!-- SVG inside -->
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5a3.5 3.5 0 013.7-3.5c1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.3V12H18l-.5 3h-2.8v7A10 10 0 0022 12z" />
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.5.5.2.8.5 1.2 1 .3.4.6 1 .8 2.1.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.5 2.2-.2.5-.5.8-1 .8-.4.3-1 .6-2.1.8-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.5-.5-.2-.8-.5-1-.8-.3-.4-.6-1-.8-2.1-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.5-2.2.2-.5.5-.8.8-1.2.4-.3 1-.6 2.1-.8C8.4 2.2 8.8 2.2 12 2.2z" />
+                            <circle cx="12" cy="12" r="3.2" />
+                        </svg>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.3 2H3.7C2.8 2 2 2.8 2 3.7v16.6C2 21.2 2.8 22 3.7 22h16.6c.9 0 1.7-.8 1.7-1.7V3.7c0-.9-.8-1.7-1.7-1.7zM8.7 17H6l4.2-4.8L6.4 7h2.6l2.4 2.8 2.2-2.8h2.5l-4 4.7L18 17h-2.6l-2.8-3.3L8.7 17z" />
+                        </svg>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-satorpBlue transition">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.7 2.2 5 5 5h14c2.8 0 5-2.3 5-5v-14c0-2.8-2.2-5-5-5zM7 20h-3v-11h3v11zM5.5 7.5c-1 0-1.8-.8-1.8-1.8S4.5 4 5.5 4s1.8.8 1.8 1.8-.8 1.7-1.8 1.7zM20 20h-3v-5.5c0-1.4-.5-2.3-1.6-2.3-1 0-1.5.7-1.8 1.3-.1.3-.1.7-.1 1.1V20h-3s.1-9 0-11h3v1.6c.4-.6 1.1-1.6 2.8-1.6 2.1 0 3.7 1.4 3.7 4.4V20z" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- Logo -->
+                <div class="mt-auto">
+                    <img src="assets/images/logo_white.png" alt="SATORP Logo" class="h-16 sm:h-20" />
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom Text -->
+        <div class="mt-10 block md:hidden text-center text-[10px] sm:text-xs text-gray-400 px-4 sm:px-6 lg:px-8">
+            © Saudi Aramco Total Refining and Petrochemical Co. SATORP
+        </div>
+    </footer>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Alpinejs Library -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Sidebar Toggle Script -->
+    <script src="assets/js/tailwind.config.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script>
+        const swiper = new Swiper('.citizenshipSwiper', {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3.5,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
